@@ -40,6 +40,7 @@ We add api-prod.horizontall.htb to our `/etc/hosts` file
 
 We launch gobuster in dir mode and we discover an 'admin' page with a login form
 
+## Foothold
 The CMS of the API seems to be Strapi. With a bit of google-fu, we find out that we can obtain the CMS version by requesting the page `admin/init`, which returns
 
 
@@ -78,6 +79,7 @@ To improve our shell, we add our own pub key to scrapi authorized_keys file
 
 Now we can ssh into the machine as scrapi.
 
+## Privesc
 We run linpeas.sh
 ```
 Some home ssh config file was found
