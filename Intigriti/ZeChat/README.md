@@ -30,7 +30,7 @@ The [Wikipedia page for Barcode](https://en.wikipedia.org/wiki/Barcode#Matrix_(2
 
 If wee keep scrolling the Google Images results we finally stumble upon this image here
 
-![[qrcode.13a824c1.png]]
+![](qrcode.13a824c1.png)
 
 and the code family on the left actually matches ours. This image belongs to the [developers documentation pages by Weixin](https://developers.weixin.qq.com/minigame/en/dev/tutorial/open-ability/qrcode.html).
 
