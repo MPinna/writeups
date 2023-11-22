@@ -3,12 +3,12 @@ Once the CTF was over, I found out in the Intigriti Discord server that this cha
 It could have saved me some time but I did not know about that, so I had to do all my research from scratch. Nevertheless, I still managed to get first blood on the challenge.
 # Writeup
 
-![[meme.png]]
+![](meme.png)
 
 
 We are only given the following PNG image
 
-![[zechat.png]]
+![](zechat.png)
 
 ### Part 1: trying some stego
 
@@ -22,7 +22,7 @@ Let's put the steganography aside for the moment and start to try and figure out
 
 The three circles on the top and on the bottom left kinda resemble the three square patterns that one can find in QR codes. These patterns are used to help the decoding software align the image correctly.
 
-![[qrcode.png]]
+![](qrcode.png)
 
 
 By Googling "round qr code" we find some different examples of round 2D matrix bar code, such as the ones used by Facebook Messenger and the ones used by Kik.
@@ -50,7 +50,7 @@ Ours is a V-36.
 
 The most important info that we can get from the paper is the following scheme that shows the structure of the Mini Program:
 
-![[miniprogramstructure.png]]
+![](miniprogramstructure.png)
 
 
 We are interested in the "Encoding region" marked in grey.
@@ -60,9 +60,9 @@ This idea sadly didn't work because of some offset discrepancy between the two.
 
 You can see my poor attempt in the pic below
 
-![[maskingfail.png]]
+![](maskingfail.png)
 
-![[borat-great.gif]]
+![](borat-great.gif)
 
 ### Part 3: The highly sophisticated image decoding method that makes use of a really niche program
 
@@ -70,13 +70,13 @@ This led me to use a **highly sophisticated image decoding method that makes use
 
 I opened both images on MS Paint and typed out the bits by hand.
 
-![[paint.png]]
+![](paint.png)
 
 Now, I could have written some script that would allow me to retrieve the bit values from the image and decode the miniprogram. But that would have probably taken hours. Don't get me wrong, I probably would have done that if I had not 1 but 100s of mini programs to decode.
 But that wasn't the case and it really wouldn't have been worth it for just one single image.
 
 Relevant xkcd:
-(![relevant xkcd](https://imgs.xkcd.com/comics/the_general_problem.png)
+![relevant xkcd](https://imgs.xkcd.com/comics/the_general_problem.png)
 
 
 
